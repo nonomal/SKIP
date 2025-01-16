@@ -4,7 +4,7 @@
 *.ap_
 *.aab
 *.json
-!/app/src/main/res/raw/*.json
+!app/src/main/assets/*.json
 # Files for the ART/Dalvik VM
 *.dex
 
@@ -50,6 +50,7 @@ captures/
 .idea/modules.xml
 # Comment next line if keeping position of elements in Navigation Editor is relevant for you
 .idea/navEditor.xml
+.idea/
 
 # Keystore files
 # Uncomment the following lines if you do not want to check your keystore files in.
@@ -84,3 +85,16 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+!package-lock.json
+!package.json
+node_modules/
+docs/.vitepress/cache
+docs/.vitepress/dist
+!tsconfig.json
+coverage
+scripts/__tests__/examples/dist
+!scripts/__tests__/examples/dist/.gitkeep
+*.zip
+!capture/*.zip
+!5f686585-c5d0-4057-93b2-c54832ffb393.zip
